@@ -2,8 +2,8 @@
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "initialPosition": "85,55", //设置窗口默认打开位置
-    "initialCols": 137, //窗口宽
-    "initialRows": 30, //窗口高
+    "initialCols": 132, //窗口宽
+    "initialRows": 35, //窗口高
     "actions": 
     [
         {
