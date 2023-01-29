@@ -2,7 +2,7 @@ $ENV:STARSHIP_CONFIG = "$HOME\Documents\PowerShell\starship.toml"
 Invoke-Expression (&starship init powershell)
 $ENV:LFCD = "$HOME\Documents\PowerShell\lfcd.ps1"
 
-     Set-PSReadLineKeyHandler -Chord Ctrl+r -ScriptBlock {
+     Set-PSReadLineKeyHandler -Chord Ctrl+o -ScriptBlock {
          [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
          [Microsoft.PowerShell.PSConsoleReadLine]::Insert('.$ENV:LFCD')
          [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
