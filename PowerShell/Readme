@@ -1,5 +1,6 @@
 put this folder in `C:\Users\$your_username\Documents`
 if use lf, put these in powershell config file
+
 ```
 $ENV:LFCD = "$HOME\Documents\PowerShell\lfcd.ps1"
 
@@ -22,5 +23,4 @@ $ENV:LFCD = "$HOME\Documents\PowerShell\lfcd.ps1"
          [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 
      }
-
 ```
