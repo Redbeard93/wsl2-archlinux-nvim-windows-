@@ -1,2 +1,2 @@
 # WindowsTerminal
-config files for windows terminal & lf file manager & powershell
+config files for windows terminal & powershell
