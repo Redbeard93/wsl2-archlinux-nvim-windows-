@@ -1,1 +1,26 @@
 put this folder in `C:\Users\$your_username\Documents`
+if use lf, put these in powershell config file
+```
+$ENV:LFCD = "$HOME\Documents\PowerShell\lfcd.ps1"
+
+     Set-PSReadLineKeyHandler -Chord Ctrl+o -ScriptBlock {
+         [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+         [Microsoft.PowerShell.PSConsoleReadLine]::Insert('.$ENV:LFCD')
+         [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
+     }
+
+     Set-PSReadLineKeyHandler -Chord F1 -ScriptBlock {
+         [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+         [Microsoft.PowerShell.PSConsoleReadLine]::Insert('wsl -d archlinux')
+         [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
+
+     }
+
+     Set-PSReadLineKeyHandler -Chord F2 -ScriptBlock {
+         [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+         [Microsoft.PowerShell.PSConsoleReadLine]::Insert('wsl -t archlinux')
+         [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
+
+     }
+
+```
